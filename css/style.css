@@ -28,7 +28,7 @@ body {
   height: 50vh;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-attachment: fixed;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
 }
 
 /* ボックス内のコンテンツ */
