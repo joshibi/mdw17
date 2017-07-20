@@ -58,34 +58,34 @@ body {
 
 /* 個別のボックス */
 .box000 {
-  background-image: url(/images/shapes00000.png);
+  background-image: url(../images/shapes00000.png);
 }
 .box001 {
-  background-image: url(/images/shapes00001.png);
+  background-image: url(../images/shapes00001.png);
 }
 .box002 {
-  background-image: url(/images/shapes00002.png);
+  background-image: url(../images/shapes00002.png);
 }
 .box003 {
-  background-image: url(/images/shapes00003.png);
+  background-image: url(../images/shapes00003.png);
 }
 .box004 {
-  background-image: url(/images/shapes00004.png);
+  background-image: url(../images/shapes00004.png);
 }
 .box005 {
-  background-image: url(/images/shapes00005.png);
+  background-image: url(../images/shapes00005.png);
 }
 .box006 {
-  background-image: url(/images/shapes00006.png);
+  background-image: url(../images/shapes00006.png);
 }
 .box007 {
-  background-image: url(/images/shapes00007.png);
+  background-image: url(../images/shapes00007.png);
 }
 .box008 {
-  background-image: url(/images/shapes00008.png);
+  background-image: url(../images/shapes00008.png);
 }
 .box009 {
-  background-image: url(/images/shapes00009.png);
+  background-image: url(../images/shapes00009.png);
 }
 .box010 {
   background-image: url(https://source.unsplash.com/VXPtggPOpcA/1600x900);
