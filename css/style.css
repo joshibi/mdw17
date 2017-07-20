@@ -1,0 +1,93 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 奇数順のボックス */
+ .box-odd {
+   background-color: #f0f0f0;
+ }
+
+/* 偶数順のボックス */
+ .box-even {
+   background-color: #ddd;
+ }
+
+/* 個別のボックス */
+.box000 {
+  background-image: url(/images/shapes00000.png);
+}
+.box001 {
+  background-image: url(/images/shapes00001.png);
+}
+.box002 {
+  background-image: url(/images/shapes00002.png);
+}
+.box003 {
+  background-image: url(/images/shapes00003.png);
+}
+.box004 {
+  background-image: url(/images/shapes00004.png);
+}
+.box005 {
+  background-image: url(/images/shapes00005.png);
+}
+.box006 {
+  background-image: url(/images/shapes00006.png);
+}
+.box007 {
+  background-image: url(/images/shapes00007.png);
+}
+.box008 {
+  background-image: url(/images/shapes00008.png);
+}
+.box009 {
+  background-image: url(/images/shapes00009.png);
+}
+.box010 {
+  background-image: url(https://source.unsplash.com/VXPtggPOpcA/1600x900);
+  background-size: cover;
+}
