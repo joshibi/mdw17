@@ -1,0 +1,422 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+.link-overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 80%; /* x, y */
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+
+.box041 .link-overlay { background-image: url(../images/URLcreepster-01.png);}
+.box052 .link-overlay { background-image: url(../images/URLfaster-01.png); }
+.box071 .link-overlay { background-image: url(../images/URLcody-01.png); }
+.box083 .link-overlay { background-image: url(../images/URLnova-01.png); }
+.box094 .link-overlay { background-image: url(../images/URLplas-01.png); }
+.box113 .link-overlay {
+  background-image: url(../images/URLfre-01.png);
+  background-position: 50% 90%; /* x, y */
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 100vh;　/*ボックスの高さ*/
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+  background-size: cover;
+}
+
+.box-link {
+  height: 2000vh;
+}
+
+.box-links {
+  height: 500vh;
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+
+}
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/desin1.png);
+}
+.box001 {
+  background-image: url(../images/desin2-01.png);
+}
+.box002 {
+  background-image: url(../images/desin2-1-01.png);
+}
+.box003 {
+  background-image: url(../images/desin2-2-01.png);
+}
+.box004 {
+  background-image: url(../images/desin2-3-01.png);
+}
+.box005 {
+  background-image: url(../images/desin2-4-01.png);
+}
+.box006 {
+  background-image: url(../images/desin2-5-01.png);
+}
+.box007 {
+  background-image: url(../images/desin2-6-01.png);
+}
+.box008 {
+  background-image: url(../images/desin2-7-01.png);
+}
+.box009 {
+  background-image: url(../images/desin2-8-01.png);
+}
+.box010 {
+  background-image: url(../images/desin2-9-01.png);
+}
+.box011 {
+  background-image: url(../images/desin2-10-01.png);
+}
+.box012 {
+  background-image: url(../images/desin2-11-01.png);
+}
+.box013 {
+  background-image: url(../images/desin2-12-01.png);
+}
+.box014 {
+  background-image: url(../images/desin2-13-01.png);
+}
+.box015 {
+  background-image: url(../images/desin2-14-01.png);
+}
+.box016 {
+  background-image: url(../images/desin2-16-01.png);
+}
+.box017 {
+  background-image: url(../images/desin2-17-01.png);
+}
+.box018 {
+  background-image: url(../images/desin2-18-01.png);
+}
+.box019 {
+  background-image: url(../images/desin3-01.png);
+}
+.box020 {
+  background-image: url(../images/desin4-01.png);
+}
+.box021 {
+  background-image: url(../images/desin4-1-01.png);
+}
+.box022 {
+  background-image: url(../images/desin4-2-01.png);
+}
+.box023 {
+  background-image: url(../images/desin4-3-01.png);
+}
+.box024 {
+  background-image: url(../images/desin4-4-01.png);
+}
+.box025 {
+  background-image: url(../images/desin5-01.png);
+}
+.box026 {
+  background-image: url(../images/desin6-01.png);
+}
+.box027 {
+  background-image: url(../images/desin6-1-01.png);
+}
+.box028 {
+  background-image: url(../images/desin7-01.png);
+}
+.box029 {
+  background-image: url(../images/desin7-1-01.png);
+}
+.box030 {
+  background-image: url(../images/desin7-2-01.png);
+}
+.box031 {
+  background-image: url(../images/desin8-01.png);
+}
+.box032 {
+  background-image: url(../images/desin8-01.png);
+}
+.box033 {
+  background-image: url(../images/desin9-01.png);
+}
+.box034 {
+  background-image: url(../images/desin11-01.png);
+}
+.box035 {
+  background-image: url(../images/desin12-01.png);
+}
+.box036 {
+  background-image: url(../images/desin13-01.png);
+}
+.box037 {
+  background-image: url(../images/desin14-01.png);
+}
+.box038 {
+  background-image: url(../images/desin16-01.png);
+}
+.box039 {
+  background-image: url(../images/desin17-01.png);
+}
+.box040 {
+  background-image: url(../images/desin18-01.png);
+}
+.box041 {
+  background-image: url(../images/desin10.png);
+}
+.box042 {
+  background-image: url(../images/2desin-01.png);
+}
+.box043 {
+  background-image: url(../images/2desin1-01.png);
+}
+.box044 {
+  background-image: url(../images/2desin2-01.png);
+}
+.box045 {
+  background-image: url(../images/2desin3-01.png);
+}
+.box046 {
+  background-image: url(../images/2desin4-01.png);
+}
+.box047 {
+  background-image: url(../images/2desin5-01.png);
+}
+.box048 {
+  background-image: url(../images/2desin6-01.png);
+}
+.box049 {
+  background-image: url(../images/2desin7-01.png);
+}
+.box050 {
+  background-image: url(../images/2desin8-01.png);
+}
+.box051 {
+  background-image: url(../images/2desin9-01.png);
+}
+.box052 {
+  background-image: url(../images/2desin10-01.png);
+}
+.box053 {
+  background-image: url(../images/de2-01.png);
+}
+.box054 {
+  background-image: url(../images/de2-01.png);
+}
+.box055 {
+  background-image: url(../images/de3-01.png);
+}
+.box056 {
+  background-image: url(../images/de4-01.png);
+}
+.box057 {
+  background-image: url(../images/de5-01.png);
+}
+.box058 {
+  background-image: url(../images/de6-01.png);
+}
+.box059 {
+  background-image: url(../images/de7-01.png);
+}
+.box060 {
+  background-image: url(../images/de8-01.png);
+}
+.box061 {
+  background-image: url(../images/de9-01.png);
+}
+.box062 {
+  background-image: url(../images/de10-01.png);
+}
+.box063 {
+  background-image: url(../images/de11-01.png);
+}
+.box064 {
+  background-image: url(../images/de12-01.png);
+}
+.box065 {
+  background-image: url(../images/de13-01.png);
+}
+.box066 {
+  background-image: url(../images/de14-01.png);
+}
+.box067 {
+  background-image: url(../images/de15-01.png);
+}
+.box068 {
+  background-image: url(../images/de16-01.png);
+}
+.box069 {
+  background-image: url(../images/de17-01.png);
+}
+.box070 {
+  background-image: url(../images/de1-01.png);
+}
+.box071 {
+  background-image: url(../images/de18-01.png);
+}
+.box072 {
+  background-image: url(../images/des1-01.png);
+}
+.box073 {
+  background-image: url(../images/des2-01.png);
+}
+.box074 {
+  background-image: url(../images/des3-01.png);
+}
+.box075 {
+  background-image: url(../images/des4-01.png);
+}
+.box076 {
+  background-image: url(../images/des5-01.png);
+}
+.box077 {
+  background-image: url(../images/des6-01.png);
+}
+.box078 {
+  background-image: url(../images/des7-01.png);
+}
+.box079 {
+  background-image: url(../images/des8-01.png);
+}
+.box080 {
+  background-image: url(../images/des9-01.png);
+}
+.box081 {
+  background-image: url(../images/des10-01.png);
+}
+.box082 {
+  background-image: url(../images/des11-01.png);
+}
+.box083 {
+  background-image: url(../images/des12-01.png);
+}
+.box084 {
+  background-image: url(../images/plas1-01.png);
+}
+.box085 {
+  background-image: url(../images/plas2-01.png);
+}
+.box086 {
+  background-image: url(../images/plas3-01.png);
+}
+.box087 {
+  background-image: url(../images/plas4-01.png);
+}
+.box088 {
+  background-image: url(../images/plas5-01.png);
+}
+.box089 {
+  background-image: url(../images/plas6-01.png);
+}
+.box090 {
+  background-image: url(../images/plas6-1-01.png);
+}
+.box091 {
+  background-image: url(../images/plas7-01.png);
+}
+.box092 {
+  background-image: url(../images/plas8-01.png);
+}
+.box093 {
+  background-image: url(../images/plas9-01.png);
+}
+.box094 {
+  background-image: url(../images/plas10-01.png);
+}
+.box095 {
+  background-image: url(../images/fre1-01.png);
+}
+.box096 {
+  background-image: url(../images/fre2-01.png);
+}
+.box097 {
+  background-image: url(../images/fre3-01.png);
+}
+.box098 {
+  background-image: url(../images/fre4-01.png);
+}
+.box099 {
+  background-image: url(../images/fre5-01.png);
+}
+.box100 {
+  background-image: url(../images/fre6-01.png);
+}
+.box101 {
+  background-image: url(../images/fre7-01.png);
+}
+.box102 {
+  background-image: url(../images/fre8-01.png);
+}
+.box103 {
+  background-image: url(../images/fre9-01.png);
+}
+.box104 {
+  background-image: url(../images/fre10-01.png);
+}
+.box105 {
+  background-image: url(../images/fre11-01.png);
+}
+.box106 {
+  background-image: url(../images/fre12-01.png);
+}
+.box107 {
+  background-image: url(../images/fre13-01.png);
+}
+.box108 {
+  background-image: url(../images/fre14-01.png);
+}
+.box109 {
+  background-image: url(../images/fre15-01.png);
+}
+.box110 {
+  background-image: url(../images/fre16-01.png);
+}
+.box111 {
+  background-image: url(../images/fre17-01.png);
+}
+.box112 {
+  background-image: url(../images/fre18-01.png);
+}
+.box113 {
+  background-image: url(../images/fre19-01.png);
+}
