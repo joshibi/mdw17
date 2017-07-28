@@ -1,0 +1,783 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  color: #f9faff;
+}
+a{
+  color: #7d7ff2;
+}
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.panel {
+  text-align: center;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 480px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 奇数順のボックス */
+ .box-odd {
+   background-color: #000000;
+ }
+
+/* 偶数順のボックス */
+ .box-even {
+   background-color: #050221;
+ }
+
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box019 {
+  background-image: url(../images/Gearth.jpg);
+  background-size: cover;
+}
+.box019 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box019 h4{
+  margin-bottom: 50px;
+}
+.box019 p{
+  margin-top: 50px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box020 {
+  background-image: url(../images/stars.jpg);
+  background-size: cover;
+}
+.box020 h1{
+    margin-bottom: 20px;
+    line-height: 0.2;
+  }
+.box020 h4{
+    margin-bottom: 60px;
+  }
+.box020 p{
+  margin-top: 55px;
+}
+a.linkrotate:hover{
+  display: block;
+  border: none;
+  transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+-webkit-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box021 {
+  background-image: url(../images/graphic.jpg);
+  background-size: cover;
+}
+.box021 h1{
+    margin-bottom: 20px;
+    line-height: 0.2;
+}
+.box021 h4{
+    margin-bottom: 60px;
+}
+.box021 p{
+  margin-top: 57px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box022 {
+  background-image: url(../images/flight.jpg);
+  background-size: cover;
+}
+.box022 h1{
+    margin-bottom: 20px;
+    line-height: 0.2;
+}
+.box022 h4{
+    margin-bottom: 60px;
+}
+.box022 p{
+  margin-top: 65px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box023 {
+  background-image: url(../images/door3.jpg);
+  background-size: cover;
+}
+.box023 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box023 h4{
+  margin-bottom: 50px;
+}
+.box023 p{
+margin-top: 60px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box024 {
+  background-image: url(../images/うう.jpg);
+  background-size: cover;
+}
+.box024 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box024 h4{
+  margin-bottom: 50px;
+}
+.box024 p{
+  margin-top: 60px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box025 {
+  background-image: url(../images/動画2.jpg);
+  background-size: cover;
+}
+.box025 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box025 h4{
+  margin-bottom: 60px;
+}
+.box025 p{
+  margin-top: 70px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box026 {
+  background-image: url(../images/天気3.jpg);
+  background-size: cover;
+}
+.box026 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box026 h4{
+  margin-bottom: 50px;
+}
+.box026 p{
+  margin-top: 70px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box027 {
+  background-image: url(../images/サイト.jpg);
+  background-size: cover;
+}
+.box027 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box027 h4{
+  margin-bottom: 70px;
+}
+.box027 p{
+  margin-top: 70px;
+}
+.box000 {
+  background-image: url(../images/1_1.png);
+}
+.box001 {
+  background-image: url(../images/2_2.png);
+}
+.box002 {
+  background-image: url(../images/3_1.png);
+}
+.box003 {
+  background-image: url(../images/4_1.png);
+}
+.box004 {
+  background-image: url(../images/5_1.png);
+}
+.box005 {
+  background-image: url(../images/6_1.png);
+}
+.box006 {
+  background-image: url(../images/7_1.png);
+}
+.box007 {
+  background-image: url(../images/8_1.png);
+}
+.box008 {
+  background-image: url(../images/9_1.png);
+}
+.box009 {
+  background-image: url(../images/10_1.png);
+}
+.box010 {
+  background-image: url(../images/11_1.png);
+}
+.box011 {
+  background-image: url(../images/12_1.png);
+}
+.box012 {
+  background-image: url(../images/13_1.png);
+}
+.box013 {
+  background-image: url(../images/14_1.png);
+}
+.box014 {
+  background-image: url(../images/15_1.png);
+}
+.box015 {
+  background-image: url(../images/16_1.png);
+}
+.box016 {
+  background-image: url(../images/17_1.png);
+}
+.box017 {
+  background-image: url(../images/18_1.png);
+}
+.box018 {
+  background-image: url(../images/19_1.png);
+}
+.box028 {
+  background-image: url(../images/チョコ.jpg);
+  background-size: cover;
+}
+.box028 h1{
+  margin-bottom: 20px;
+  line-height: 0.2;
+}
+.box028 h3{
+    margin-bottom: 10px;
+}
+.box028 p{
+  margin-top: 18px;
+}

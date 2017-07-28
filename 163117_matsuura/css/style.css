@@ -1,0 +1,315 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* フルサイズのボックス */
+.box-full {
+  height: 500vh;
+}
+
+.box-inverted {
+  background-color: #a5a5a5;
+}
+
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/1.png);
+}
+.box001 {
+  background-image: url(../images/2.png);
+}
+.box002 {
+  background-image: url(../images/3.png);
+}
+.box003 {
+  background-image: url(../images/4.png);
+}
+.box004 {
+  background-image: url(../images/5.png);
+}
+.box005 {
+  background-image: url(../images/6.png);
+}
+.box006 {
+  background-image: url(../images/7.png);
+}
+.box007 {
+  background-image: url(../images/8.png);
+}
+.box008 {
+  background-image: url(../images/9.png);
+}
+.box009 {
+  background-image: url(../images/10.png);
+}
+.box010 {
+  background-image: url(../images/1back.png);
+  background-size: cover;
+}
+.box011 {
+  background-image: url(../images/11.png);
+}
+.box012 {
+  background-image: url(../images/12.png);
+}
+.box013 {
+  background-image: url(../images/13.png);
+}
+.box014 {
+  background-image: url(../images/14.png);
+}
+.box015 {
+  background-image: url(../images/15.png);
+}
+.box016 {
+  background-image: url(../images/16.png);
+}
+.box017 {
+  background-image: url(../images/17.png);
+}
+.box018 {
+  background-image: url(../images/18.png);
+}
+.box019 {
+  background-image: url(../images/19.png);
+}
+.box020 {
+  background-image: url(../images/2back.png);
+  background-size: cover;
+}
+.box021 {
+  background-image: url(../images/20.png);
+}
+.box022 {
+  background-image: url(../images/21.png);
+}
+.box023 {
+  background-image: url(../images/22.png);
+}
+.box024 {
+  background-image: url(../images/23.png);
+}
+.box025 {
+  background-image: url(../images/24.png);
+}
+.box026 {
+  background-image: url(../images/25.png);
+}
+.box027 {
+  background-image: url(../images/26.png);
+}
+.box028 {
+  background-image: url(../images/27.png);
+}
+.box029 {
+  background-image: url(../images/28.png);
+}
+.box030 {
+  background-image: url(../images/3back.png);
+  background-size: cover;
+}
+.box021 {
+  background-image: url(../images/29.png);
+}
+.box022 {
+  background-image: url(../images/30.png);
+}
+.box023 {
+  background-image: url(../images/31.png);
+}
+.box024 {
+  background-image: url(../images/32.png);
+}
+.box025 {
+  background-image: url(../images/33.png);
+}
+.box026 {
+  background-image: url(../images/34.png);
+}
+.box027 {
+  background-image: url(../images/35.png);
+}
+.box028 {
+  background-image: url(../images/36.png);
+}
+.box029 {
+  background-image: url(../images/37.png);
+}
+.box031 {
+  background-image: url(../images/4back.png);
+  background-size: cover;
+}
+.box000 {
+  background-image: url(../images/1.png);
+}
+.box001 {
+  background-image: url(../images/2.png);
+}
+.box002 {
+  background-image: url(../images/3.png);
+}
+.box003 {
+  background-image: url(../images/4.png);
+}
+.box004 {
+  background-image: url(../images/5.png);
+}
+.box005 {
+  background-image: url(../images/6.png);
+}
+.box006 {
+  background-image: url(../images/7.png);
+}
+.box007 {
+  background-image: url(../images/8.png);
+}
+.box008 {
+  background-image: url(../images/9.png);
+}
+.box009 {
+  background-image: url(../images/10.png);
+}
+.box032 {
+  background-image: url(../images/5back.png);
+  background-size: cover;
+}
+.box011 {
+  background-image: url(../images/11.png);
+}
+.box012 {
+  background-image: url(../images/12.png);
+}
+.box013 {
+  background-image: url(../images/13.png);
+}
+.box014 {
+  background-image: url(../images/14.png);
+}
+.box015 {
+  background-image: url(../images/15.png);
+}
+.box016 {
+  background-image: url(../images/16.png);
+}
+.box017 {
+  background-image: url(../images/17.png);
+}
+.box018 {
+  background-image: url(../images/18.png);
+}
+.box019 {
+  background-image: url(../images/19.png);
+}
+.box033 {
+  background-image: url(../images/6back.png);
+  background-size: cover;
+}
+.box021 {
+  background-image: url(../images/20.png);
+}
+.box022 {
+  background-image: url(../images/21.png);
+}
+.box023 {
+  background-image: url(../images/22.png);
+}
+.box024 {
+  background-image: url(../images/23.png);
+}
+.box025 {
+  background-image: url(../images/24.png);
+}
+.box026 {
+  background-image: url(../images/25.png);
+}
+.box027 {
+  background-image: url(../images/26.png);
+}
+.box028 {
+  background-image: url(../images/27.png);
+}
+.box029 {
+  background-image: url(../images/28.png);
+}
+.box034 {
+  background-image: url(../images/7back.png);
+  background-size: cover;
+}
+.box021 {
+  background-image: url(../images/29.png);
+}
+.box022 {
+  background-image: url(../images/30.png);
+}
+.box023 {
+  background-image: url(../images/31.png);
+}
+.box024 {
+  background-image: url(../images/32.png);
+}
+.box025 {
+  background-image: url(../images/33.png);
+}
+.box026 {
+  background-image: url(../images/34.png);
+}
+.box027 {
+  background-image: url(../images/35.png);
+}
+.box028 {
+  background-image: url(../images/36.png);
+}
+.box029 {
+  background-image: url(../images/37.png);
+}
+.box035 {
+  background-image: url(../images/8back.png);
+  background-size: cover;
+}
+.box036 {
+  background-image: url(../images/9back.png);
+  background-size: cover;
+}
+.box037 {
+  background-image: url(../images/10back.png);
+  background-size: cover;
+}

@@ -1,0 +1,767 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+.caption {
+  font-size: 12px;
+  text-align: center;
+}
+
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#pageTop a {
+  display: block;
+  z-index: 999;
+  padding: 8px 8px;
+  border-radius: 35px;
+  width: 20px;
+  height: 20px;
+  background-color: #9FD6D2;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+  background-size: cover;
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 85%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.button {
+  color: #ffffff;
+  background-color: #EFAC26;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 奇数順のボックス */
+ .box-odd {
+   /*background-color: #ff0000;*/
+ }
+
+/* 偶数順のボックス */
+ .box-even {
+   /*background-color: #ddd;*/
+ }
+.boxin{
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+  background-size: contain;
+}
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/haikeiw.png);
+}
+.box000 .boxin{
+  background-image: url(../images/cover.png);
+}
+.box001 {
+  background-image: url(../images/ooarai1.jpg);
+}
+.box002 {
+  background-image: url(../images/ooarai2.jpg);
+}
+.box003 {
+  background-image: url(../images/ooarai3.jpg);
+}
+.box004 {
+  background-image: url(../images/ooarai4.jpg);
+}
+.box005 {
+  background-image: url(../images/ooarai5.jpg);
+}
+.box006 {
+  background-image: url(../images/ooarai6.jpg);
+}
+.box007 {
+  background-image: url(../images/ooarai7.jpg);
+}
+.box008 {
+  background-image: url(../images/ooarai8.jpg);
+}
+.box009 {
+  background-image: url(../images/ooarai9.jpg);
+}
+.box010 {
+background-image: url(../images/haikeiw.png);
+}
+.box010 .boxin{
+  background-image: url(../images/ooarai.png);
+}
+.box011 {
+  background-image: url(../images/jyoudogahama_02438.jpg);
+}
+.box012 {
+  background-image: url(../images/jyoudogahama_02439.jpg);
+}
+.box013 {
+  background-image: url(../images/jyoudogahama_02440.jpg);
+}
+.box014 {
+  background-image: url(../images/jyoudogahama_02441.jpg);
+}
+.box015 {
+  background-image: url(../images/jyoudogahama_02442.jpg);
+}
+.box016 {
+  background-image: url(../images/jyoudogahama_02443.jpg);
+}
+.box017 {
+  background-image: url(../images/jyoudogahama_02444.jpg);
+}
+.box018 {
+  background-image: url(../images/jyoudogahama_02445.jpg);
+}
+.box019 {
+  background-image: url(../images/jyoudogahama_02446.jpg);
+}
+.box020 {
+  background-image: url(../images/jyoudogahama_02447.jpg);
+}
+.box021 {
+  background-image: url(../images/jyoudogahama_02448.jpg);
+}
+.box022 {
+  background-image: url(../images/jyoudogahama_02449.jpg);
+}
+.box023 {
+  background-image: url(../images/jyoudogahama_02450.jpg);
+}
+.box024 {
+  background-image: url(../images/haikeiw.png);
+}
+.box024 .boxin{
+  background-image: url(../images/jyoudogahama.png);
+}
+.box025 {
+  background-image: url(../images/kondoi1.jpg);
+}
+.box026 {
+  background-image: url(../images/kondoi2.jpg);
+}
+.box027 {
+  background-image: url(../images/kondoi3.jpg);
+}
+.box028 {
+  background-image: url(../images/kondoi4.jpg);
+}
+.box029 {
+  background-image: url(../images/kondoi5.jpg);
+}
+.box030 {
+  background-image: url(../images/kondoi5.jpg);
+}
+.box031 {
+  background-image: url(../images/kondoi6.jpg);
+}
+.box032 {
+  background-image: url(../images/kondoi7.jpg);
+}
+.box033 {
+  background-image: url(../images/kondoi8.jpg);
+}
+.box034 {
+  background-image: url(../images/kondoi9.jpg);
+}
+.box035 {
+  background-image: url(../images/kondoi10.jpg);
+}
+.box036 {
+  background-image: url(../images/kondoi11.jpg);
+}
+.box037 {
+  background-image: url(../images/kondoi12.jpg);
+}
+.box038 {
+  background-image: url(../images/kondoi13.jpg);
+}
+.box039 {
+  background-image: url(../images/kondoi14.jpg);
+}
+.box040 {
+  background-image: url(../images/kondoi15.jpg);
+}
+.box041 {
+  background-image: url(../images/haikeiw.png);
+}
+.box041 .boxin{
+  background-image: url(../images/kondoi.png);
+}
+.box042 {
+  background-image: url(../images/goishi_00100.jpg);
+}
+.box043 {
+  background-image: url(../images/goishi_00101.jpg);
+}
+.box044 {
+  background-image: url(../images/goishi_00102.jpg);
+}
+.box045 {
+  background-image: url(../images/goishi_00103.jpg);
+}
+.box046 {
+  background-image: url(../images/goishi_00104.jpg);
+}
+.box047 {
+  background-image: url(../images/goishi_00105.jpg);
+}
+.box048 {
+  background-image: url(../images/goishi_00106.jpg);
+}
+.box049 {
+  background-image: url(../images/goishi_00107.jpg);
+}
+.box050 {
+  background-image: url(../images/goishi_00108.jpg);
+}
+.box051 {
+  background-image: url(../images/goishi_00109.jpg);
+}
+.box052 {
+  background-image: url(../images/goishi_00110.jpg);
+}
+.box053 {
+  background-image: url(../images/goishi_00111.jpg);
+}
+.box054 {
+  background-image: url(../images/goishi_00112.jpg);
+}
+.box055 {
+  background-image: url(../images/goishi_00113.jpg);
+}
+.box056 {
+  background-image: url(../images/goishi_00114.jpg);
+}
+.box057 {
+  background-image: url(../images/goishi_00115.jpg);
+}
+.box058 {
+  background-image: url(../images/goishi_00110.jpg);
+}
+.box059 {
+  background-image: url(../images/goishi_00111.jpg);
+}
+.box060 {
+  background-image: url(../images/goishi_00112.jpg);
+}
+.box061 {
+  background-image: url(../images/goishi_00113.jpg);
+}
+.box062 {
+  background-image: url(../images/goishi_00114.jpg);
+}
+.box063 {
+  background-image: url(../images/goishi_00115.jpg);
+}
+.box064 {
+  background-image: url(../images/haikeiw.png);
+}
+.box064 .boxin{
+  background-image: url(../images/goishigahama.png);
+}
+.box065 {
+  background-image: url(../images/hatenohama_01260.jpg);
+}
+.box066 {
+  background-image: url(../images/hatenohama_01261.jpg);
+}
+.box067 {
+  background-image: url(../images/hatenohama_01262.jpg);
+}
+.box068 {
+  background-image: url(../images/hatenohama_01263.jpg);
+}
+.box069 {
+  background-image: url(../images/hatenohama_01264.jpg);
+}
+.box070 {
+  background-image: url(../images/hatenohama_01265.jpg);
+}
+.box071 {
+  background-image: url(../images/hatenohama_01266.jpg);
+}
+.box072 {
+  background-image: url(../images/hatenohama_01267.jpg);
+}
+.box073 {
+  background-image: url(../images/hatenohama_01268.jpg);
+}
+.box074 {
+  background-image: url(../images/hatenohama_01269.jpg);
+}
+.box075 {
+  background-image: url(../images/hatenohama_01270.jpg);
+}
+.box076 {
+  background-image: url(../images/hatenohama_01271.jpg);
+}
+.box077 {
+  background-image: url(../images/hatenohama_01272.jpg);
+}
+.box078 {
+  background-image: url(../images/hatenohama_01273.jpg);
+}
+.box079 {
+  background-image: url(../images/hatenohama_01274.jpg);
+}
+.box080 {
+  background-image: url(../images/hatenohama_01275.jpg);
+}
+.box081 {
+  background-image: url(../images/haikeiw.png);
+}
+.box081 .boxin{
+  background-image: url(../images/hatenohama.png);
+}
+.box082 {
+  background-image: url(../images/shirahama_00705.jpg);
+}
+.box083 {
+  background-image: url(../images/shirahama_00706.jpg);
+}
+.box084 {
+  background-image: url(../images/shirahama_00707.jpg);
+}
+.box085 {
+  background-image: url(../images/shirahama_00708.jpg);
+}
+.box086 {
+  background-image: url(../images/shirahama_00709.jpg);
+}
+.box087 {
+  background-image: url(../images/shirahama_00710.jpg);
+}
+.box088 {
+  background-image: url(../images/shirahama_00711.jpg);
+}
+.box089 {
+  background-image: url(../images/shirahama_00712.jpg);
+}
+.box090 {
+  background-image: url(../images/shirahama_00713.jpg);
+}
+.box091 {
+  background-image: url(../images/shirahama_00714.jpg);
+}
+.box092 {
+  background-image: url(../images/shirahama_00715.jpg);
+}
+.box093 {
+  background-image: url(../images/shirahama_00716.jpg);
+}
+.box094 {
+  background-image: url(../images/shirahama_00717.jpg);
+}
+.box095 {
+  background-image: url(../images/shirahama_00718.jpg);
+}
+.box096 {
+  background-image: url(../images/shirahama_00719.jpg);
+}
+.box097 {
+  background-image: url(../images/shirahama_00720.jpg);
+}
+.box098 {
+  background-image: url(../images/shirahama_00721.jpg);
+}
+.box099 {
+  background-image: url(../images/shirahama_00722.jpg);
+}
+.box100 {
+  background-image: url(../images/shirahama_00723.jpg);
+}
+.box101 {
+  background-image: url(../images/shirahama_00724.jpg);
+}
+.box102 {
+  background-image: url(../images/shirahama_00725.jpg);
+}
+.box103 {
+  background-image: url(../images/haikeiw.png);
+}
+.box103 .boxin{
+  background-image: url(../images/shirahama.png);
+}
+.box104 {
+    background-image: url(../images/ubara_01110.jpg);
+}
+.box105 {
+    background-image: url(../images/ubara_01111.jpg);
+}
+.box106 {
+    background-image: url(../images/ubara_01112.jpg);
+}
+.box107 {
+    background-image: url(../images/ubara_01113.jpg);
+}
+.box108 {
+    background-image: url(../images/ubara_01114.jpg);
+}
+.box109 {
+    background-image: url(../images/ubara_01115.jpg);
+}
+.box110 {
+    background-image: url(../images/ubara_01116.jpg);
+}
+.box111 {
+    background-image: url(../images/ubara_01117.jpg);
+}
+.box112 {
+    background-image: url(../images/ubara_01118.jpg);
+}
+.box113 {
+  background-image: url(../images/ubara_01119.jpg);
+}
+.box114 {
+  background-image: url(../images/ubara_01120.jpg);
+}
+.box115 {
+  background-image: url(../images/ubara_01121.jpg);
+}
+.box116 {
+  background-image: url(../images/ubara_01122.jpg);
+}
+.box117 {
+  background-image: url(../images/ubara_01123.jpg);
+}
+.box118 {
+  background-image: url(../images/ubara_01124.jpg);
+}
+.box119 {
+  background-image: url(../images/ubara_01125.jpg);
+}
+.box120 {
+  background-image: url(../images/ubara_01126.jpg);
+}
+.box121 {
+  background-image: url(../images/ubara_01127.jpg);
+}
+.box122 {
+  background-image: url(../images/ubara_01128.jpg);
+}
+.box123 {
+  background-image: url(../images/ubara_01129.jpg);
+}
+.box124 {
+  background-image: url(../images/ubara_01130.jpg);
+}
+.box125 {
+  background-image: url(../images/haikeiw.png);
+}
+.box125 .boxin{
+  background-image: url(../images/ubara.png);
+}
+.box126 {
+    background-image: url(../images/syounan_01025.jpg);
+}
+.box127 {
+    background-image: url(../images/syounan_01026.jpg);
+}
+.box128 {
+    background-image: url(../images/syounan_01027.jpg);
+}
+.box129 {
+    background-image: url(../images/syounan_01028.jpg);
+}
+.box130 {
+    background-image: url(../images/syounan_01029.jpg);
+}
+.box131 {
+    background-image: url(../images/syounan_01030.jpg);
+}
+.box132 {
+    background-image: url(../images/syounan_01031.jpg);
+}
+.box133 {
+    background-image: url(../images/syounan_01032.jpg);
+}
+.box134 {
+    background-image: url(../images/syounan_01033.jpg);
+}
+.box135 {
+  background-image: url(../images/syounan_01034.jpg);
+}
+.box136 {
+  background-image: url(../images/syounan_01035.jpg);
+}
+.box137 {
+  background-image: url(../images/syounan_01036.jpg);
+}
+.box138 {
+  background-image: url(../images/syounan_01037.jpg);
+}
+.box139 {
+  background-image: url(../images/syounan_01038.jpg);
+}
+.box140 {
+  background-image: url(../images/syounan_01039.jpg);
+}
+.box141 {
+  background-image: url(../images/syounan_01040.jpg);
+}
+.box142 {
+  background-image: url(../images/syounan_01041.jpg);
+}
+.box143 {
+  background-image: url(../images/syounan_01042.jpg);
+}
+.box144 {
+  background-image: url(../images/syounan_01043.jpg);
+}
+.box145 {
+  background-image: url(../images/syounan_01044.jpg);
+}
+.box146 {
+  background-image: url(../images/syounan_01045.jpg);
+}
+.box147 {
+  background-image: url(../images/haikeiw.png);
+}
+.box147 .boxin{
+  background-image: url(../images/syounan.png);
+}
+.box148 {
+    background-image: url(../images/kosigoe_00560.jpg);
+}
+.box149 {
+    background-image: url(../images/kosigoe_00561.jpg);
+}
+.box150 {
+    background-image: url(../images/kosigoe_00562.jpg);
+}
+.box151 {
+    background-image: url(../images/kosigoe_00563.jpg);
+}
+.box152 {
+    background-image: url(../images/kosigoe_00564.jpg);
+}
+.box153 {
+    background-image: url(../images/kosigoe_00565.jpg);
+}
+.box154 {
+    background-image: url(../images/kosigoe_00566.jpg);
+}
+.box155 {
+    background-image: url(../images/kosigoe_00567.jpg);
+}
+.box156 {
+    background-image: url(../images/kosigoe_00568.jpg);
+}
+.box157 {
+  background-image: url(../images/kosigoe_00569.jpg);
+}
+.box158 {
+  background-image: url(../images/kosigoe_00570.jpg);
+}
+.box159 {
+  background-image: url(../images/kosigoe_00571.jpg);
+}
+.box160 {
+  background-image: url(../images/kosigoe_00572.jpg);
+}
+.box161 {
+  background-image: url(../images/kosigoe_00573.jpg);
+}
+.box162 {
+  background-image: url(../images/kosigoe_00574.jpg);
+}
+.box163 {
+  background-image: url(../images/kosigoe_00575.jpg);
+}
+.box164 {
+  background-image: url(../images/kosigoe_00576.jpg);
+}
+.box165 {
+  background-image: url(../images/kosigoe_00577.jpg);
+}
+.box166 {
+  background-image: url(../images/kosigoe_00578.jpg);
+}
+.box167 {
+  background-image: url(../images/kosigoe_00579.jpg);
+}
+.box168 {
+  background-image: url(../images/kosigoe_00580.jpg);
+}
+.box169 {
+  background-image: url(../images/kosigoe_00581.jpg);
+}
+.box170 {
+  background-image: url(../images/kosigoe_00582.jpg);
+}
+.box171 {
+  background-image: url(../images/kosigoe_00583.jpg);
+}
+.box172 {
+  background-image: url(../images/kosigoe_00584.jpg);
+}
+.box173 {
+  background-image: url(../images/kosigoe_00585.jpg);
+}
+.box174 {
+  background-image: url(../images/kosigoe_00586.jpg);
+}
+.box175 {
+  background-image: url(../images/kosigoe_00587.jpg);
+}
+.box176 {
+  background-image: url(../images/kosigoe_00588.jpg);
+}
+.box177 {
+  background-image: url(../images/kosigoe_00589.jpg);
+}
+.box178 {
+  background-image: url(../images/kosigoe_00590.jpg);
+}
+.box179 {
+  background-image: url(../images/haikeiw.png);
+}
+.box179 .boxin{
+  background-image: url(../images/kosigoe.png);
+}
+.box180 {
+  background-image: url(../images/yuigahama_00060.jpg);
+}
+.box181 {
+  background-image: url(../images/yuigahama_00061.jpg);
+}
+.box182 {
+  background-image: url(../images/yuigahama_00062.jpg);
+}
+.box183 {
+  background-image: url(../images/yuigahama_00063.jpg);
+}
+.box184 {
+  background-image: url(../images/yuigahama_00064.jpg);
+}
+.box185 {
+  background-image: url(../images/yuigahama_00065.jpg);
+}
+.box186 {
+  background-image: url(../images/yuigahama_00066.jpg);
+}
+.box187 {
+  background-image: url(../images/yuigahama_00067.jpg);
+}
+.box188 {
+  background-image: url(../images/yuigahama_00068.jpg);
+}
+.box189 {
+  background-image: url(../images/yuigahama_00069.jpg);
+}
+.box190 {
+  background-image: url(../images/yuigahama_00070.jpg);
+}
+.box191 {
+  background-image: url(../images/yuigahama_00071.jpg);
+}
+.box192 {
+  background-image: url(../images/yuigahama_00072.jpg);
+}
+.box193 {
+  background-image: url(../images/yuigahama_00073.jpg);
+}
+.box194 {
+  background-image: url(../images/yuigahama_00074.jpg);
+}
+.box195 {
+  background-image: url(../images/yuigahama_00075.jpg);
+}
+.box196 {
+  background-image: url(../images/yuigahama_00076.jpg);
+}
+.box197 {
+  background-image: url(../images/yuigahama_00077.jpg);
+}
+.box198 {
+  background-image: url(../images/yuigahama_00078.jpg);
+}
+.box199 {
+  background-image: url(../images/yuigahama_00079.jpg);
+}
+.box200 {
+  background-image: url(../images/yuigahama_00080.jpg);
+}
+.box201 {
+  background-image: url(../images/yuigahama_00081.jpg);
+}
+.box202 {
+  background-image: url(../images/yuigahama_00082.jpg);
+}
+.box203 {
+  background-image: url(../images/yuigahama_00083.jpg);
+}
+.box204 {
+  background-image: url(../images/yuigahama_00084.jpg);
+}
+.box205 {
+  background-image: url(../images/yuigahama_00085.jpg);
+}
+.box206 {
+  background-image: url(../images/yuigahama_00086.jpg);
+}
+.box207 {
+  background-image: url(../images/yuigahama_00087.jpg);
+}
+.box208 {
+  background-image: url(../images/yuigahama_00088.jpg);
+}
+.box209 {
+  background-image: url(../images/haikeiw.png);
+}
+.box209 .boxin{
+  background-image: url(../images/yuigahama.png);
+}

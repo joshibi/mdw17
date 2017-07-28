@@ -33,14 +33,24 @@ body {
 }
 
 .box041 .link-overlay { background-image: url(../images/URLcreepster-01.png);}
-.box052 .link-overlay { background-image: url(../images/URLfaster-01.png); }
-.box071 .link-overlay { background-image: url(../images/URLcody-01.png); }
+.box052 .link-overlay { background-image: url(../images/URLfaster-01.png);}
+.box071 .link-overlay { background-image: url(../images/URLcody-01.png);}
 .box083 .link-overlay { background-image: url(../images/URLnova-01.png); }
 .box094 .link-overlay { background-image: url(../images/URLplas-01.png); }
-.box113 .link-overlay {
+.box114 .link-overlay {
   background-image: url(../images/URLfre-01.png);
-  background-position: 50% 90%; /* x, y */
+  background-position: 50% 95%; /* x, y */
 }
+.box124 .link-overlay { background-image: url(../images/URLaudio-01.png); }
+.box145 .link-overlay {
+  background-image: url(../images/URLdiner-01.png);
+  background-position: 50% 48%; /* x, y */
+}
+.box156 .link-overlay {
+  background-image: url(../images/URLhana-01.png);
+  background-position: 50% 75%; /* x, y */
+}
+.box169 .link-overlay { background-image: url(../images/URLmy-01.png);}
 
 /* ボックス */
 .box {
@@ -53,11 +63,11 @@ body {
 }
 
 .box-link {
-  height: 2000vh;
+  height: 1000vh;
 }
 
 .box-links {
-  height: 500vh;
+  height: 1000vh;
 }
 
 /* ボックス内のコンテンツ */
@@ -419,4 +429,172 @@ body {
 }
 .box113 {
   background-image: url(../images/fre19-01.png);
+}
+.box114 {
+  background-image: url(../images/fre25-01.png);
+}
+.box115 {
+  background-image: url(../images/au1.png);
+}
+.box116 {
+  background-image: url(../images/au2.png);
+}
+.box117 {
+  background-image: url(../images/au3.png);
+}
+.box118 {
+  background-image: url(../images/au4.png);
+}
+.box119 {
+  background-image: url(../images/au5.png);
+}
+.box120 {
+  background-image: url(../images/au6.png);
+}
+.box121 {
+  background-image: url(../images/au7.png);
+}
+.box122 {
+  background-image: url(../images/au8.png);
+}
+.box123 {
+  background-image: url(../images/au9.png);
+}
+.box124 {
+  background-image: url(../images/au10.png);
+}
+.box125 {
+  background-image: url(../images/iza1-01.png);
+}
+.box126 {
+  background-image: url(../images/iza2-01.png);
+}
+.box127 {
+  background-image: url(../images/iza3-01.png);
+}
+.box128 {
+  background-image: url(../images/iza4-01.png);
+}
+.box129 {
+  background-image: url(../images/iza5-01.png);
+}
+.box130 {
+  background-image: url(../images/iza6-01.png);
+}
+.box131 {
+  background-image: url(../images/iza7-01.png);
+}
+.box132 {
+  background-image: url(../images/iza8-01.png);
+}
+.box133 {
+  background-image: url(../images/iza9-01.png);
+}
+.box134 {
+  background-image: url(../images/iza10-01.png);
+}
+.box135 {
+  background-image: url(../images/iza11-01.png);
+}
+.box136 {
+  background-image: url(../images/iza12-01.png);
+}
+.box137 {
+  background-image: url(../images/iza13-01.png);
+}
+.box138 {
+  background-image: url(../images/iza14-01.png);
+}
+.box139 {
+  background-image: url(../images/iza15-01.png);
+}
+.box140 {
+  background-image: url(../images/iza16-01.png);
+}
+.box141 {
+  background-image: url(../images/iza17-01.png);
+}
+.box142 {
+  background-image: url(../images/iza18-01.png);
+}
+.box143 {
+  background-image: url(../images/iza19-01.png);
+}
+.box144 {
+  background-image: url(../images/iza20-01.png);
+}
+.box145 {
+  background-image: url(../images/iza22-01.png);
+}
+.box146 {
+  background-image: url(../images/hana1-01.png);
+}
+.box147 {
+  background-image: url(../images/hana2-01.png);
+}
+.box148 {
+  background-image: url(../images/hana3-01.png);
+}
+.box149 {
+  background-image: url(../images/hana4-01.png);
+}
+.box150 {
+  background-image: url(../images/hana5-01.png);
+}
+.box151 {
+  background-image: url(../images/hana6-01.png);
+}
+.box152 {
+  background-image: url(../images/hana7-01.png);
+}
+.box153 {
+  background-image: url(../images/hana8-01.png);
+}
+.box154 {
+  background-image: url(../images/hana9-01.png);
+}
+.box155 {
+  background-image: url(../images/hana10-01.png);
+}
+.box156 {
+  background-image: url(../images/hana11-01.png);
+}
+.box157 {
+  background-image: url(../images/my1-01.png);
+}
+.box158 {
+  background-image: url(../images/my2-01.png);
+}
+.box159 {
+  background-image: url(../images/my3-01.png);
+}
+.box160 {
+  background-image: url(../images/my4-01.png);
+}
+.box161 {
+  background-image: url(../images/my5-01.png);
+}
+.box162 {
+  background-image: url(../images/my6-01.png);
+}
+.box163 {
+  background-image: url(../images/my7-01.png);
+}
+.box164 {
+  background-image: url(../images/my8-01.png);
+}
+.box165 {
+  background-image: url(../images/my9-01.png);
+}
+.box166 {
+  background-image: url(../images/my10-01.png);
+}
+.box167 {
+  background-image: url(../images/my11-01.png);
+}
+.box168 {
+  background-image: url(../images/my12-01.png);
+}
+.box169 {
+  background-image: url(../images/my13-01.png);
 }

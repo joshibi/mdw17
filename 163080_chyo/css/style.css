@@ -1,0 +1,523 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: 'Zilla Slab', serif;
+  font-size: 55px;
+}
+
+a {
+  color: #ffffff;
+}
+
+
+/* タイトル */
+.title {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 奇数順のボックス */
+ .box-odd1 {
+   background-color: #75C7D0;
+ }
+ .box-odd2 {
+   background-color: #ABE795;
+ }
+
+/* 偶数順のボックス */
+ .box-even1 {
+   background-color: #75E7D0;
+ }
+ .box-even2 {
+   background-color: #FFEA53;
+ }
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/clock1.png);
+}
+.box001 {
+  background-image: url(../images/clock2.png);
+}
+
+.box001 p{
+  color: #fff;
+}
+.box002 {
+  background-image: url(../images/clock3.png);
+}
+.box003 {
+  background-image: url(../images/clock4.png);
+}
+
+.box003 p{
+  color: #fff;
+}
+.box004 {
+  background-image: url(../images/clock5.png);
+}
+.box005 {
+  background-image: url(../images/clock6.png);
+}
+
+.box005 p{
+  color: #fff;
+}
+.box006 {
+  background-image: url(../images/clock7.png);
+}
+.box007 {
+  background-image: url(../images/1.png);
+}
+
+.box007 a{
+  text-decoration: underline;
+}
+.box008 {
+  background-image: url(../images/clock1.png);
+}
+
+.box008 p{
+  color: #fff;
+}
+.box009 {
+  background-image: url(../images/clock2.png);
+}
+
+.box009 p{
+  color: #fff;
+}
+.box010 {
+  background-image: url(../images/clock3.png);
+}
+.box011 {
+  background-image: url(../images/clock4.png);
+}
+
+.box011 p{
+  color: #fff;
+}
+.box012 {
+  background-image: url(../images/clock5.png);
+}
+.box013 {
+  background-image: url(../images/clock6.png);
+}
+
+.box013 p{
+  color: #fff;
+}
+.box014 {
+  background-image: url(../images/clock7.png);
+}
+
+.box014 p{
+  color: #fff;
+}
+.box015 {
+  background-image: url(../images/2.png);
+}
+
+.box015 a{
+  text-decoration: underline;
+}
+.box016 {
+  background-image: url(../images/clock1.png);
+}
+
+.box016 p{
+  color: #fff;
+}
+.box017 {
+  background-image: url(../images/clock2.png);
+}
+
+.box017 p{
+  color: #fff;
+}
+.box018 {
+  background-image: url(../images/clock3.png);
+}
+
+.box018 p{
+  color: #fff;
+}
+.box019 {
+  background-image: url(../images/clock4.png);
+}
+.box020 {
+  background-image: url(../images/clock5.png);
+}
+.box021 {
+  background-image: url(../images/clock6.png);
+}
+.box021 p{
+  color: #fff;
+}
+.box022 {
+  background-image: url(../images/clock7.png);
+}
+
+.box022 p{
+  color: #fff;
+}
+.box023 {
+  background-image: url(../images/3.png);
+}
+.box023 a{
+  text-decoration: underline;
+}
+.box024 {
+  background-image: url(../images/clock1.png);
+}
+.box025 {
+  background-image: url(../images/clock2.png);
+}
+.box026 {
+  background-image: url(../images/clock3.png);
+}
+
+.box026 p{
+  color: #fff;
+}
+.box027 {
+  background-image: url(../images/clock4.png);
+}
+.box028 {
+  background-image: url(../images/clock5.png);
+}
+
+.box028 p{
+  color: #fff;
+}
+.box029 {
+  background-image: url(../images/clock6.png);
+}
+.box030 {
+  background-image: url(../images/clock7.png);
+}
+.box031 {
+  background-image: url(../images/4.png);
+}
+
+.box031 a{
+  text-decoration: underline;
+}
+.box032 {
+  background-image: url(../images/clock1.png);
+}
+.box033 {
+  background-image: url(../images/clock2.png);
+}
+
+.box033 p{
+  color: #fff;
+}
+.box034 {
+  background-image: url(../images/clock3.png);
+}
+.box035 {
+  background-image: url(../images/clock4.png);
+}
+
+.box035 p{
+  color: #fff;
+}
+.box036 {
+  background-image: url(../images/clock5.png);
+}
+.box037 {
+  background-image: url(../images/clock6.png);
+}
+.box037 p{
+  color: #fff;
+}
+.box038 {
+  background-image: url(../images/clock7.png);
+}
+.box039 {
+  background-image: url(../images/5.png);
+}
+
+.box039 a{
+  text-decoration: underline;
+}
+.box040 {
+  background-image: url(../images/clock1.png);
+}
+.box041 {
+  background-image: url(../images/clock2.png);
+}
+.box042 {
+  background-image: url(../images/clock3.png);
+}
+.box042 p{
+  color: #fff;
+}
+.box043 {
+  background-image: url(../images/clock4.png);
+}
+.box043 p{
+  color: #fff;
+}
+.box044 {
+  background-image: url(../images/clock5.png);
+}
+.box045 {
+  background-image: url(../images/clock6.png);
+}
+.box045 p{
+  color: #fff;
+}
+.box046 {
+  background-image: url(../images/clock7.png);
+}
+.box047 {
+  background-image: url(../images/6.png);
+}
+
+.box047 a{
+  text-decoration: underline;
+}
+.box048 {
+  background-image: url(../images/clock1.png);
+}
+.box049 {
+  background-image: url(../images/clock2.png);
+}
+.box050 {
+  background-image: url(../images/clock3.png);
+}
+.box051 {
+  background-image: url(../images/clock51.png);
+}
+.box052 {
+  background-image: url(../images/clock61.png);
+}
+.box053 {
+  background-image: url(../images/clock71.png);
+}
+.box054 {
+  background-image: url(../images/clock81.png);
+}
+.box055 {
+  background-image: url(../images/7.png);
+}
+
+.box055 a{
+  text-decoration: underline;
+}
+.box056 {
+  background-image: url(../images/clock1.png);
+}
+.box057 {
+  background-image: url(../images/clock2.png);
+}
+.box058 {
+  background-image: url(../images/clock3.png);
+}
+.box059 {
+  background-image: url(../images/clock51.png);
+}
+.box060 {
+  background-image: url(../images/clock61.png);
+}
+.box061 {
+  background-image: url(../images/clock71.png);
+}
+.box062 {
+  background-image: url(../images/clock81.png);
+}
+.box063 {
+  background-image: url(../images/8.png);
+}
+
+.box063 a{
+  text-decoration: underline;
+}
+.box064 {
+  background-image: url(../images/clock1.png);
+}
+.box065 {
+  background-image: url(../images/clock2.png);
+}
+.box066 {
+  background-image: url(../images/clock3.png);
+}
+.box067 {
+  background-image: url(../images/clock4.png);
+}
+.box067 p{
+  color: #fff;
+}
+.box068 {
+  background-image: url(../images/clock5.png);
+}
+.box069 {
+  background-image: url(../images/clock6.png);
+}
+.box069 p{
+  color: #fff;
+}
+.box070 {
+  background-image: url(../images/clock7.png);
+}
+.box071 {
+  background-image: url(../images/9.png);
+}
+
+.box071 a{
+  text-decoration: underline;
+}
+.box072 {
+  background-image: url(../images/clock1.png);
+}
+.box073 {
+  background-image: url(../images/clock2.png);
+}
+.box074 {
+  background-image: url(../images/clock3.png);
+}
+.box075 {
+  background-image: url(../images/clock51.png);
+}
+.box076 {
+  background-image: url(../images/clock61.png);
+}
+.box077 {
+  background-image: url(../images/clock71.png);
+}
+.box078 {
+  background-image: url(../images/clock81.png);
+}
+.box079 {
+  background-image: url(../images/10.png);
+}
+
+.box079 a{
+  text-decoration: underline;
+}
+.box080 {
+  background-image: url(../images/clock1.png);
+}
+.box080 p{
+  color: #fff;
+}
+.box081 {
+  background-image: url(../images/clock2.png);
+}
+.box081 p{
+  color: #fff;
+}
+.box082 {
+  background-image: url(../images/clock3.png);
+}
+.box083 {
+  background-image: url(../images/clock4.png);
+}
+.box083 p{
+  color: #fff;
+}
+.box084 {
+  background-image: url(../images/clock5.png);
+}
+.box084 p{
+  color: #fff;
+}
+.box085 {
+  background-image: url(../images/clock6.png);
+}
+.box086 {
+  background-image: url(../images/clock7.png);
+}
+.box086 p{
+  color: #fff;
+}
+.box087 {
+  background-image: url(../images/11.png);
+}
+
+.box087 a{
+  text-decoration: underline;
+}
+.box088 {
+  background-image: url(../images/clock5.png);
+}
+.box089 {
+  background-image: url(../images/clock6.png);
+}
+.box090 {
+  background-image: url(../images/clock7.png);
+}
+.box091 {
+  background-image: url(../images/clock9.png);
+}
+.box092 {
+  background-image: url(../images/clock10.png);
+}
+.box093 {
+  background-image: url(../images/clock11.png);
+}
+.box094 {
+  background-image: url(../images/clock12.png);
+}
+.box095 {
+  background-image: url(../images/clock13.png);
+}
+.box096 {
+  background-image: url(../images/clock14.png);
+}
+.box097 {
+  background-image: url(../images/clock15.png);
+}
+.box098 {
+  background-image: url(../images/clock16.png);
+}
+.box099 {
+  background-image: url(../images/clock17.png);
+}
+.box100 {
+  background-image: url(../images/clock18.png);
+}
+
+.box101 a{
+  text-decoration: underline;
+}

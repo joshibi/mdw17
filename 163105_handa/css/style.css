@@ -1,0 +1,318 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* ボックスの前の背景 */
+.box-fg {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+
+/* ボックスの後ろの背景 */
+.box-bg {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+  background-size: cover;
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* 個別のボックス */
+
+.box-fg.box000 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box000 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box001 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box001 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box002 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box002 {
+  background-image: url(../images/border_2.png);
+}
+.box-fg.box003 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box003 {
+  background-image: url(../images/2016bg.png);
+}
+.box-fg.box004 {
+  background-image: url(../images/2016logo.png);
+}
+.box-bg.box004 {
+  background-image: url(../images/2016bg.png);
+}
+.box-fg.box005 {
+  background-image: url(../images/2016logo.png);
+}
+.box-bg.box005 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box006 {
+  background-image: url(../images/2016lo.png);
+}
+.box-bg.box006 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box007 {
+  background-image: url(../images/2016lo.png);
+}
+.box-bg.box007 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box008 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box008 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box009 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box009 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box0010 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0010 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box0011 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0011 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0012 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0012 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0013 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0013 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0013 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0013 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0013 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0013 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0014 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0014 {
+  background-image: url(../images/2014bg.png);
+}
+.box-fg.box0015 {
+  background-image: url(../images/2014logo.png);
+}
+.box-bg.box0015 {
+  background-image: url(../images/2014bg.png);
+}
+.box-fg.box0016 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0016 {
+  background-image: url(../images/2014bg.png);
+}
+.box-fg.box0017 {
+  background-image: url(../images/2014logo.png);
+}
+.box-bg.box0017 {
+  background-image: url(../images/2010bg.png);
+}
+.box-fg.box0018 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0018 {
+  background-image: url(../images/2010bg.png);
+}
+.box-fg.box0019 {
+  background-image: url(../images/2010logo.png);
+}
+.box-bg.box0019 {
+  background-image: url(../images/2010bg.png);
+}
+.box-fg.box0020 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0020 {
+  background-image: url(../images/2010bg.png);
+}
+.box-fg.box0021 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0021 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box0022 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0022 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box0023 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0023 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0024 {
+  background-image: url(../images/2009logo.png);
+}
+.box-bg.box0024 {
+  background-image: url(../images/2009bg.png);
+}
+.box-fg.box0025 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0025 {
+  background-image: url(../images/checkers.png);
+}
+.box-fg.box0026 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0026 {
+  background-image: url(../images/2008bg.png);
+}
+.box-fg.box0027 {
+  background-image: url(../images/2008logo.png);
+}
+.box-bg.box0027 {
+  background-image: url(../images/2008bg.png);
+}
+.box-fg.box0028 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0028 {
+  background-image: url(../images/2008bg.png);
+}
+.box-fg.box0029 {
+  background-image: url(../images/2006logo.png);
+}
+.box-bg.box0029 {
+  background-image: url(../images/2008bg.png);
+}
+.box-fg.box0030 {
+  background-image: url(../images/2006logo.png);
+}
+.box-bg.box0030 {
+  background-image: url(../images/2006bg.png);
+}
+.box-fg.box0031 {
+  background-image: url(../images/2005logo.png);
+}
+.box-bg.box0031 {
+  background-image: url(../images/2006bg.png);
+}
+.box-fg.box0032 {
+  background-image: url(../images/2005logo.png);
+}
+.box-bg.box0032 {
+  background-image: url(../images/border.png);
+}
+.box-fg.box0033 {
+  background-image: url(../images/2005logo.png);
+}
+.box-bg.box0033 {
+  background-image: url(../images/2005bg.png);
+}
+.box-fg.box0034 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0034 {
+  background-image: url(../images/2005bg.png);
+}
+.box-fg.box0035 {
+  background-image: url(../images/1108_2logo.png);
+}
+.box-bg.box0035 {
+  background-image: url(../images/2000bg.png);
+}
+.box-fg.box0036 {
+  background-image: url(../images/2000logo.png);
+}
+.box-bg.box0036 {
+  background-image: url(../images/2000bg.png);
+}
+.box-fg.box0037 {
+  background-image: url(../images/1999logo.png);
+}
+.box-bg.box0037 {
+  background-image: url(../images/2000bg.png);
+}
+.box-fg.box0038 {
+  background-image: url(../images/1999logo.png);
+}
+.box-bg.box0038 {
+  background-image: url(../images/1999bg.png);
+}
+.box-fg.box0039 {
+  background-image: url(../images/1999logo.png);
+}
+.box-bg.box0039 {
+  background-image: url(../images/1997bg.png);
+}
+.box-fg.box0040 {
+  background-image: url(../images/1108_2.png);
+}
+.box-bg.box0040 {
+  background-image: url(../images/1997bg.png);
+}
+.box-fg.box0041 {
+  background-image: url(../images/1997.png);
+}
+.box-bg.box0041 {
+  background-image: url(../images/1997bg.png);

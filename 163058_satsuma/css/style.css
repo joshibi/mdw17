@@ -1,0 +1,425 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+/* ボックスin */
+.boxin {
+  position: relative;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: absolute;
+  max-width: 720px;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.enemy .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/kawasemi_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_2 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/kitsune_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_3 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/yagi_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_4 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/kame_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_5 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/shika_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_6 .panel-link {
+  display: block;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(../images/usagi_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  max-width: 720px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+}
+
+.enemy_7 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/neko_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_8 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/fukurou_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_9 .panel-link {
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/ookami_anime.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+.enemy_10 .panel-link {
+  display: block;
+  position:absolute;
+  top: 65%;
+  left: 50%;
+  background-image: url(../images/hereitis.gif);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  max-width: 720px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 奇数順のボックス */
+ .box-odd {
+   background-color: #c7f23a;
+ }
+
+ .box-odd2 {
+   background-color: #6afcb8;
+ }
+
+ .box-odd3 {
+   background-color: #42aaff;
+ }
+
+ .box-odd4 {
+   background-color: #ffe856;
+ }
+
+ .box-odd5 {
+   background-color: #fca753;
+ }
+
+ .box-odd6 {
+   background-color: #e05789;
+ }
+
+ .box-odd7 {
+   background-color: #ce660c;
+ }
+
+ .box-odd8 {
+   background-color: #7338ff;
+ }
+
+ .box-odd9 {
+   background-color: #26c9c9;
+ }
+
+ .box-odd10 {
+   background-color: #2b34e5;
+ }
+
+/* 偶数順のボックス */
+ .box-even {
+   background-color: #8fef6b;
+ }
+
+ .box-even2 {
+   background-color: #44d6b6;
+ }
+
+ .box-even3 {
+   background-color: #7192fc;
+ }
+
+ .box-even4 {
+   background-color: #f9c639;
+ }
+
+ .box-even5 {
+   background-color: #f9734a;
+ }
+
+ .box-even6 {
+   background-color: #d130b3;
+ }
+
+ .box-even7 {
+   background-color: #cc4000;
+ }
+
+ .box-even8 {
+   background-color: #8816e5;
+ }
+
+ .box-even9 {
+   background-color: #0090ad;
+ }
+
+ .box-even10 {
+   background-color: #101bb7;
+ }
+
+
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/omusubi_1.png);
+}
+.box001 {
+  background-image: url(../images/omusubi_2.png);
+}
+.box002 {
+  background-image: url(../images/omusubi_3.png);
+}
+.box003 {
+  background-image: url(../images/omusubi_4.png);
+}
+.box004 {
+  background-image: url(../images/omusubi_5.png);
+}
+.box005 {
+  background-image: url(../images/omusubi_6.png);
+}
+.box006 {
+  background-image: url(../images/omusubi_7.png);
+}
+.box007 {
+  background-image: url(../images/omusubi_8.png);
+}
+.box008 {
+  background-image: url(../images/omusubi_9.png);
+}
+.box009 {
+  background-image: url(../images/omusubi_10.png);
+}
+.box010 {
+  background-image: url(../images/omusubi_11.png);
+}
+.box011 {
+  background-image: url(../images/omusubi_12.png);
+}
+.box012 {
+  background-image: url(../images/omusubi_13.png);
+}
+.box013 {
+  background-image: url(../images/omusubi_14.png);
+}
+.box014 {
+  background-image: url(../images/omusubi_15.png);
+}
+.box015 {
+  background-image: url(../images/omusubi_16.png);
+}
+.box016 {
+  background-image: url(../images/omusubi_17.png);
+}
+.box017 {
+  background-image: url(../images/omusubi_18.png);
+}
+.box018 {
+  background-image: url(../images/omusubi_19.png);
+}
+
+
+.box019 {
+  background-image: url(../images/hiru_animal.png);
+  background-size: cover;
+}
+
+.box020 {
+  background-image: url(../images/hiru_animal.png);
+  background-size: cover;
+}
+
+.box021 {
+  background-image: url(../images/hiru_animal2.png);
+  background-size: cover;
+}
+
+.box022 {
+  background-image: url(../images/hiru_animal3.png);
+  background-size: cover;
+}
+
+.box023 {
+  background-image: url(../images/hiru_animal4.png);
+  background-size: cover;
+}
+
+.box024 {
+  background-image: url(../images/hiru_animal5.png);
+  background-size: cover;
+}
+
+.box025 {
+  background-image: url(../images/yoru_animal1.png);
+  background-size: cover;
+}
+
+.box026 {
+  background-image: url(../images/yoru_animal2.png);
+  background-size: cover;
+}
+
+.box027 {
+  background-image: url(../images/yoru_animal3.png);
+  background-size: cover;
+}
+
+.box028 {
+  background-image: url(../images/yoru_animal4.png);
+  background-size: cover;
+}
+
+.box029 {
+  background-image: url(../images/hole.png);
+  background-size: cover;
+}
+
+.box030 {
+  background-image: url(../images/omusubi_missing1.png);
+}
+
+.box031 {
+  background-image: url(../images/omusubi_missing2.png);
+}
+
+.box032 {
+  background-image: url(../images/omusubi_missing3.png);
+}
+
+.box033 {
+  background-image: url(../images/omusubi_missing4.png);
+}
+
+.box034 {
+  background-image: url(../images/omusubi_missing5.png);
+}
+
+.box035 {
+  background-image: url(../images/utage.png);
+  background-size: cover;
+}
+
+.boxin000{
+  background-image: url(../images/hiru.png);
+  background-size: cover;
+}
+
+.boxin001{
+  background-image: url(../images/yoru.png);
+  background-size: cover;
+}
