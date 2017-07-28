@@ -1,0 +1,642 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* ボックス */
+.box {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+  background-size: cover;
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  font-size: 25px;
+  position: absolute;
+  max-width: 720px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cont-right {
+  right: 100px;
+  /*background-color: rgba(0, 0, 255, 0.5);*/
+}
+
+.text-en, .text-ja {
+  margin: .5em 0 0;
+}
+
+a {
+  text-decoration: underline;
+}
+
+/* 個別のボックス */
+.box001 {
+  background-image: url(../images/elevator1.png);
+}
+.box002 {
+  background-image: url(../images/elevator2.png);
+}
+.box003 {
+  background-image: url(../images/elevator3.png);
+}
+.box004 {
+  background-image: url(../images/elevator4.png);
+}
+.box005 {
+  background-image: url(../images/elevator5.png);
+}
+.box006 {
+  background-image: url(../images/elevator6.png);
+}
+.box007 {
+  background-image: url(../images/elevator7.png);
+}
+.box008 {
+  background-image: url(../images/elevator8.png);
+}
+.box009 {
+  background-image: url(../images/elevator9.png);
+}
+.box010 {
+  background-image: url(../images/elevator10.png);
+}
+.box011 {
+  background-image: url(../images/elevator11.png);
+}
+.box012 {
+  background-image: url(../images/elevator20.png);
+}
+.box013 {
+  background-image: url(../images/elevator21.png);
+}
+.box014 {
+  background-image: url(../images/elevator22.png);
+}
+.box015 {
+  background-image: url(../images/elevator23.png);
+}
+.box016 {
+  background-image: url(../images/elevator24.png);
+}
+.box017 {
+  background-image: url(../images/elevator25.png);
+}
+.box018 {
+  background-image: url(../images/elevator26.png);
+}
+.box019 {
+  background-image: url(../images/elevator27.png);
+}
+.box020 {
+  background-image: url(../images/elevator28.png);
+}
+.box021 {
+  background-image: url(../images/elevator29.png);
+}
+.box022 {
+  background-image: url(../images/elevator30.png);
+}
+.box023 {
+  background-image: url(../images/elevator31.png);
+}
+.box024 {
+  background-image: url(../images/elevator32.png);
+}
+.box025 {
+  background-image: url(../images/elevator33.png);
+}
+.box026 {
+  background-image: url(../images/elevator34.png);
+}
+.box027 {
+  background-image: url(../images/elevator35.png);
+}
+.box028 {
+  background-image: url(../images/elevator36.png);
+}
+.box029 {
+  background-image: url(../images/elevator37.png);
+}
+.box030 {
+  background-image: url(../images/elevator38.png);
+}
+.box031 {
+  background-image: url(../images/elevator39.png);
+}
+.box032 {
+  background-image: url(../images/elevator40.png);
+}
+.box033 {
+  background-image: url(../images/elevator41.png);
+}
+.box034 {
+  background-image: url(../images/elevator42.png);
+}
+.box035 {
+  background-image: url(../images/elevator43.png);
+}
+.box036 {
+  background-image: url(../images/elevator44.png);
+}
+.box037 {
+  background-image: url(../images/elevator45.png);
+}
+.box038 {
+  background-image: url(../images/elevator46.png);
+}
+.box039 {
+  background-image: url(../images/elevator47.png);
+}
+.box040 {
+  background-image: url(../images/elevator48.png);
+}
+.box041 {
+  background-image: url(../images/elevator49.png);
+}
+.box042 {
+  background-image: url(../images/elevator50.png);
+}
+.box043 {
+  background-image: url(../images/elevator51.png);
+}
+.box044 {
+  background-image: url(../images/elevator52.png);
+}
+.box045 {
+  background-image: url(../images/elevator53.png);
+}
+.box046 {
+  background-image: url(../images/elevator54.png);
+}
+.box047 {
+  background-image: url(../images/elevator55.png);
+}
+.box048 {
+  background-image: url(../images/elevator56.png);
+}
+.box049 {
+  background-image: url(../images/elevator57.png);
+}
+.box050 {
+  background-image: url(../images/elevator58.png);
+}
+.box051 {
+  background-image: url(../images/elevator59.png);
+}
+.box052 {
+  background-image: url(../images/elevator60.png);
+}
+.box053 {
+  background-image: url(../images/elevator61.png);
+}
+.box054 {
+  background-image: url(../images/elevator62.png);
+}
+.box055 {
+  background-image: url(../images/elevator63.png);
+}
+.box056 {
+  background-image: url(../images/elevator64.png);
+}
+.box057 {
+  background-image: url(../images/elevator65.png);
+}
+.box058 {
+  background-image: url(../images/elevator66.png);
+}
+.box059 {
+  background-image: url(../images/elevator67.png);
+}
+.box060 {
+  background-image: url(../images/elevator68.png);
+}
+.box061 {
+  background-image: url(../images/elevator69.png);
+}
+.box062 {
+  background-image: url(../images/elevator70.png);
+}
+.box063 {
+  background-image: url(../images/elevator71.png);
+}
+.box064 {
+  background-image: url(../images/elevator72.png);
+}
+.box065 {
+  background-image: url(../images/elevator73.png);
+}
+.box066 {
+  background-image: url(../images/elevator74.png);
+}
+.box067 {
+  background-image: url(../images/elevator75.png);
+}
+.box068 {
+  background-image: url(../images/elevator76.png);
+}
+.box069 {
+  background-image: url(../images/elevator77.png);
+}
+.box070 {
+  background-image: url(../images/elevator78.png);
+}
+.box071 {
+  background-image: url(../images/elevator79.png);
+}
+.box072 {
+  background-image: url(../images/elevator80.png);
+}
+.box073 {
+  background-image: url(../images/elevator81.png);
+}
+.box074 {
+  background-image: url(../images/elevator82.png);
+}
+.box075 {
+  background-image: url(../images/elevator83.png);
+}
+.box076 {
+  background-image: url(../images/elevator84.png);
+}
+.box077 {
+  background-image: url(../images/elevator85.png);
+}
+.box078 {
+  background-image: url(../images/elevator86.png);
+}
+.box079 {
+  background-image: url(../images/elevator87.png);
+}
+.box080 {
+  background-image: url(../images/elevator88.png);
+}
+.box081 {
+  background-image: url(../images/elevator89.png);
+}
+.box082 {
+  background-image: url(../images/elevator90.png);
+}
+.box083 {
+  background-image: url(../images/elevator91.png);
+}
+.box084 {
+  background-image: url(../images/elevator92.png);
+}
+.box085 {
+  background-image: url(../images/elevator93.png);
+}
+.box086 {
+  background-image: url(../images/elevator94.png);
+}
+.box087 {
+  background-image: url(../images/elevator95.png);
+}
+.box088 {
+  background-image: url(../images/elevator96.png);
+}
+.box089 {
+  background-image: url(../images/elevator97.png);
+}
+.box090 {
+  background-image: url(../images/elevator98.png);
+}
+.box091 {
+  background-image: url(../images/elevator99.png);
+}
+.box092 {
+  background-image: url(../images/elevator100.png);
+}
+.box093 {
+  background-image: url(../images/elevator101.png);
+}
+.box094 {
+  background-image: url(../images/elevator102.png);
+}
+.box095 {
+  background-image: url(../images/elevator103.png);
+}
+.box096 {
+  background-image: url(../images/elevator104.png);
+}
+.box097 {
+  background-image: url(../images/elevator105.png);
+}
+.box098 {
+  background-image: url(../images/elevator106.png);
+}
+.box099 {
+  background-image: url(../images/elevator107.png);
+}
+.box100 {
+  background-image: url(../images/elevator108.png);
+}
+.box101 {
+  background-image: url(../images/elevator109.png);
+}
+.box102 {
+  background-image: url(../images/elevator110.png);
+}
+.box103 {
+  background-image: url(../images/elevator111.png);
+}
+.box104 {
+  background-image: url(../images/elevator112.png);
+}
+.box105 {
+  background-image: url(../images/elevator113.png);
+}
+.box106 {
+  background-image: url(../images/elevator114.png);
+}
+.box107 {
+  background-image: url(../images/elevator115.png);
+}
+.box108 {
+  background-image: url(../images/elevator116.png);
+}
+.box109 {
+  background-image: url(../images/elevator117.png);
+}
+.box110 {
+  background-image: url(../images/elevator118.png);
+}
+.box111 {
+  background-image: url(../images/elevator119.png);
+}
+.box112 {
+  background-image: url(../images/elevator120.png);
+}
+.box113 {
+  background-image: url(../images/elevator121.png);
+}
+.box114 {
+  background-image: url(../images/elevator122.png);
+}
+.box115 {
+  background-image: url(../images/elevator123.png);
+}
+.box116 {
+  background-image: url(../images/elevator124.png);
+}
+.box117 {
+  background-image: url(../images/elevator125.png);
+}
+.box118 {
+  background-image: url(../images/elevator126.png);
+}
+.box119 {
+  background-image: url(../images/elevator127.png);
+}
+.box120 {
+  background-image: url(../images/elevator128.png);
+}
+.box121 {
+  background-image: url(../images/elevator129.png);
+}
+.box122 {
+  background-image: url(../images/elevator130.png);
+}
+.box123 {
+  background-image: url(../images/elevator131.png);
+}
+.box124 {
+  background-image: url(../images/elevator132.png);
+}
+.box125 {
+  background-image: url(../images/elevator133.png);
+}
+.box126 {
+  background-image: url(../images/elevator134.png);
+}
+.box127 {
+  background-image: url(../images/elevator135.png);
+}
+.box128 {
+  background-image: url(../images/elevator136.png);
+}
+.box129 {
+  background-image: url(../images/elevator137.png);
+}
+.box130 {
+  background-image: url(../images/elevator138.png);
+}
+.box131 {
+  background-image: url(../images/elevator139.png);
+}
+.box132 {
+  background-image: url(../images/elevator140.png);
+}
+.box133 {
+  background-image: url(../images/elevator141.png);
+}
+
+.box134 {
+  background-image: url(../images/elevator142.png);
+}
+.box135 {
+  background-image: url(../images/elevator143.png);
+}
+.box136 {
+  background-image: url(../images/elevator144.png);
+}
+.box137 {
+  background-image: url(../images/elevator145.png);
+}
+.box138 {
+  background-image: url(../images/elevator146.png);
+}
+.box139 {
+  background-image: url(../images/elevator147.png);
+}
+.box140 {
+  background-image: url(../images/elevator148.png);
+}
+.box141 {
+  background-image: url(../images/elevator149.png);
+}
+.box142 {
+  background-image: url(../images/elevator150.png);
+}
+.box143 {
+  background-image: url(../images/elevator151.png);
+}
+.box144 {
+  background-image: url(../images/elevator152.png);
+}
+.box145 {
+  background-image: url(../images/elevator153.png);
+}
+.box146 {
+  background-image: url(../images/elevator154.png);
+}
+.box147 {
+  background-image: url(../images/elevator155.png);
+}
+.box148 {
+  background-image: url(../images/elevator156.png);
+}
+.box149 {
+  background-image: url(../images/elevator157.png);
+}
+.box150 {
+  background-image: url(../images/elevator158.png);
+}
+.box151 {
+  background-image: url(../images/elevator159.png);
+}
+.box152 {
+  background-image: url(../images/elevator160.png);
+}
+.box153 {
+  background-image: url(../images/elevator161.png);
+}
+.box154 {
+  background-image: url(../images/elevator162.png);
+}
+.box155 {
+  background-image: url(../images/elevator163.png);
+}
+.box156 {
+  background-image: url(../images/elevator164.png);
+}
+.box157 {
+  background-image: url(../images/elevator165.png);
+}
+.box158 {
+  background-image: url(../images/elevator166.png);
+}
+.box159 {
+  background-image: url(../images/elevator167.png);
+}
+.box160 {
+  background-image: url(../images/elevator168.png);
+}
+.box161 {
+  background-image: url(../images/elevator169.png);
+}
+.box162 {
+  background-image: url(../images/elevator170.png);
+}
+.box163 {
+  background-image: url(../images/elevator171.png);
+}
+.box164 {
+  background-image: url(../images/elevator172.png);
+}
+.box165 {
+  background-image: url(../images/elevator173.png);
+}
+.box166 {
+  background-image: url(../images/elevator174.png);
+}
+.box167 {
+  background-image: url(../images/elevator175.png);
+}
+.box168 {
+  background-image: url(../images/elevator176.png);
+}
+.box169 {
+  background-image: url(../images/elevator177.png);
+}
+.box170 {
+  background-image: url(../images/elevator178.png);
+}
+.box171 {
+  background-image: url(../images/elevator179.png);
+}
+.box172 {
+  background-image: url(../images/elevator180.png);
+}
+.box173 {
+  background-image: url(../images/elevator181.png);
+}
+.box174 {
+  background-image: url(../images/elevator182.png);
+}
+.box175 {
+  background-image: url(../images/elevator183.png);
+}
+.box176 {
+  background-image: url(../images/elevator184.png);
+}
+.box177 {
+  background-image: url(../images/elevator185.png);
+}
+.box178 {
+  background-image: url(../images/elevator186.png);
+}
+.box179 {
+  background-image: url(../images/elevator187.png);
+}
+.box180 {
+  background-image: url(../images/elevator188.png);
+}
+.box181 {
+  background-image: url(../images/elevator189.png);
+}
+.box182 {
+  background-image: url(../images/elevator190.png);
+}
+.box183 {
+  background-image: url(../images/elevator191.png);
+}
+.box184 {
+  background-image: url(../images/elevator192.png);
+}
+.box185 {
+  background-image: url(../images/elevator193.png);
+}
+.box186 {
+  background-image: url(../images/elevator194.png);
+}
+.box187 {
+  background-image: url(../images/elevator195.png);
+}
+.box188 {
+  background-image: url(../images/elevator196.png);
+}
+.box189 {
+  background-image: url(../images/elevator197.png);
+}
+.box190 {
+  background-image: url(../images/elevator198.png);
+}
+.box191 {
+  background-image: url(../images/elevator199.png);
+}
+.box192 {
+  background-image: url(../images/elevator197.png);
+}
+.box190 {
+  background-image: url(../images/elevator198.png);
+}
+.box191 {
+  background-image: url(../images/elevator199.png);
+}
