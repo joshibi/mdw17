@@ -1,330 +1,300 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
 html {
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
+	font-size: 1.6rem;
+	line-height: 1.6;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 a:hover {
-  color: #D396E2;
-  -webkit-transition: .2s ease;
-  -o-transition: .2s ease;
-  transition: .2s ease;
+	color: #D396E2;
+	transition: .2s ease;
+	-webkit-transition: .2s ease;
+	-o-transition: .2s ease;
 }
 
 p {
-  margin: 0;
+	margin: 0;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 *, *::after, *::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
-
-/*
-font-family で優先順に書体を適用、
-body 要素は全体にかかるので、書体設定は継承される
-*/
 
 body {
-  font-family: 'Abril Fatface', "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	font-family: 'Abril Fatface', "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
-
-
-/* タイトル */
 
 .title {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  z-index: 10;
+	position: fixed;
+	z-index: 10;
+	top: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 
-/* ボックス */
+/* ========================================================================================
+
+Block: box
+
+===========================================================================================*/
 
 .box {
-  position: relative;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-attachment: fixed;
-  /* ウインドウに対して背景を固定する */
-  background-size: 90% 100vh;
-  background-image: url("../images/movie.png");
+	position: relative;
+	height: 100vh;
+	background: url("https://www.dropbox.com/s/6fzt7wumnbprdx1/movie_0.png?dl=1") repeat-y fixed 50%;
+	background-size: contain;
 }
 
 .box__info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
 .box__text {
-  margin: 0 25%;
-  font-size: 1.9em;
-  text-align: center;
-}
-
-.jp {
-    font-size: 1.5em;
+	margin: 0 25%;
+	font-size: 1.9em;
+	text-align: center;
 }
 
 .box__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .box__image {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 50%;
-  height: 80%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  /* align-self: center; */
+	width: 50%;
+	height: 80%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: no-repeat center;
+	background-size: contain;
 }
 
 .box--ticket {
-  background-image: url("../images/box0.png");
-}
-
-.box--chair {
-  background-image: url("../images/box3.png");
+	background-image: url("../images/box0.png");
 }
 
 .box--popcorn {
-  background-image: url("../images/box1.png");
+	background-image: url("../images/box1.png");
 }
 
 .box--glasses {
-  background-image: url("../images/box2.png");
+	background-image: url("../images/box2.png");
+}
+
+.box--chair {
+	background-image: url("../images/box3.png");
 }
 
 .box--camera {
-  background-image: url("../images/box4.png");
+	background-image: url("../images/box4.png");
 }
+
 .box--movie1 {
-  background-image: url("../images/movie1.png");
+	background-image: url("../images/movie1.png");
 }
 
 .box--movie2 {
-  background-image: url("../images/movie2.png");
-}
-
-.box--movie5 {
-  background-image: url("../images/movie5.png");
-}
-
-.box--movie4 {
-  background-image: url("../images/movie4.png");
+	background-image: url("../images/movie2.png");
 }
 
 .box--movie3 {
-  background-image: url("../images/movie3.png");
+	background-image: url("../images/movie3.png");
+}
+
+.box--movie4 {
+	background-image: url("../images/movie4.png");
+}
+
+.box--movie5 {
+	background-image: url("../images/movie5.png");
 }
 
 .box--movie6 {
-  background-image: url("../images/movie6.png");
-
+	background-image: url("../images/movie6.png");
 }
-.box--movie7{
-  background-image: url("../images/movie7.png");
+
+.box--movie7 {
+	background-image: url("../images/movie7.png");
 }
-  .box--countdown-1 {
-    background-image: url("../images/countdown-1.png");
-  }
 
-  .box--countdown-2 {
-    background-image: url("../images/countdown-2.png");
-  }
+.box--countdown-1 {
+	background-image: url("../images/countdown-1.png");
+}
 
-  .box--countdown-3 {
-    background-image: url("../images/countdown-3.png");
+.box--countdown-2 {
+	background-image: url("../images/countdown-2.png");
+}
 
-
+.box--countdown-3 {
+	background-image: url("../images/countdown-3.png");
 }
 
 .bg-image {
-    background-image: url('../images/bg-image.png');
-        background-position: right;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 100vh;
-        min-height: 100vh;
-        max-width: 100%;
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+	height: 100vh;
+	min-height: 100vh;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url('../images/bg-image.png') no-repeat fixed right;
+	background-size: cover;
 }
 
 .bg-image__text {
-color: white;
+	color: white;
 }
+
 .bg-color--01 {
-  background-color: #EFA3A7;
+	background-color: #EFA3A7;
 }
 
 .bg-color--02 {
-  background-color: #EF9AD3;
+	background-color: #EF9AD3;
 }
 
 .bg-color--03 {
-  background-color: #D396E2;
+	background-color: #D396E2;
 }
 
 .bg-color--04 {
-  background-color: #A5A9F2;
+	background-color: #A5A9F2;
 }
 
 .bg-color--05 {
-  background-color: #C0F2EF;
+	background-color: #C0F2EF;
 }
 
 .bg-color--07 {
-  background-color: #EFEDBB;
+	background-color: #EFEDBB;
 }
 
 .bg-color--08 {
-  background-color: #F7E1C4;
+	background-color: #F7E1C4;
 }
 
-.bg-color--09 {
-  background-color: #C0F2EF;
-}
 
-.bg-color--10 {
-  background-color: #D396E2;
-}
+/* ========================================================================================
 
-.bg-color--11 {
-  background-color: #C0F2EF;
-}
+Others
 
-.bg-color--12 {
-  background-color: #EFA3A7;
-}
-
-.bg-color--13 {
-  background-color: #C0F2EF;
-}
-
-.bg-color--14 {
-  background-color: #D396E2;
-}
-
-.bg-color--15 {
-  background-color: #A5A9F2;
-}
-
-.bg-color--16 {
-  background-color: #C0F2EF;
-}
-
-.bg-color--17 {
-  background-color: #A7D1B2;
-}
-.bg-color--18 {
-  background-color: ##9FA0A0;
-}
-
+===========================================================================================*/
 
 .click-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .cut-image {
-    display: flex;
-    justify-content: center;
-    width: 50vh;
-    height: 50vh;
-    background-image: url("../images/cut.png");
-    background-size: 50vh 50vh;
-    background-repeat: no-repeat;
-}
-.displayDiv {
-    display: none;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-.show {
-    display: block;
+	width: 50vh;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	background-image: url("../images/cut.png");
+	background-size: 50vh 50vh;
+	background-repeat: no-repeat;
 }
 
+.displayDiv {
+	display: none;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+/* ========================================================================================
+
+Javascript
+
+===========================================================================================*/
+
+.show {
+	display: block;
+}
+
+
+/* ========================================================================================
+
+Helpers
+
+===========================================================================================*/
+
 .two-lines {
-flex-direction: column;
+	flex-direction: column;
 }
 
 .two-lines__margin {
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 
 .big-size {
-    font-size: 2.2em;
+	font-size: 2.2em;
 }
-/*# sourceMappingURL=style.css.map */
+
+.jp {
+	font-size: 1.5em;
+}
