@@ -1,0 +1,492 @@
+/*
+Google Fonts を読み込む
+https://saruwakakun.com/html-css/basic/google-fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+font-family で優先順に書体を適用、
+body 要素は全体にかかるので、書体設定は継承される
+*/
+body {
+  font-family: Karla, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* タイトル */
+.title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+/* ボックス */
+.box {
+  position: relative;
+  height: 200vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* ウインドウに対して背景を固定する */
+  background-size:contain;
+}
+
+/* ボックス内のコンテンツ */
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.link-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20%auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0);
+}
+
+.link-overlay:hover {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../images/link1.png);
+  background-attachment: fixed;
+}
+
+.center{
+ text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* ナビゲーション */
+
+.globalNavi {
+  background-color: rgba(100,75,38,0.7);
+  margin: 0;
+  padding: 20;
+     font-size: 70%;
+    text-align: right
+}
+.logo{float: left;
+margin-left: 20px;
+}
+
+.globalNavi ul li {
+    list-style-type: none;
+    display: inline;
+     margin: 10 10px;
+
+}
+
+.globalNavi ul li a {
+    color: #fff;}
+.globalNavi ul li a:hover {
+    color: #6f5530;}
+
+
+
+/* フルサイズのボックス */
+.box-full {
+  height: 100vh;
+}
+
+/* 奇数順のボックス */
+ .box-odd {
+   background-color: #fff;
+ }
+
+/* 偶数順のボックス */
+ .box-even {
+   background-color: #fff;
+ }
+ /* 偶数順のボックス */
+  .box-mo {
+    background-color: #909090;
+  }
+  /* 偶数順のボックス */
+   .box-ya {
+     background-color: #606060;
+   }
+   /* 偶数順のボックス */
+    .box-si {
+      background-color: #202020;
+    }
+
+    .box-tya {
+      background-color: #8CC63D;
+    }
+
+  .box-abura {
+      background-color: rgba(209,129,53,0.7);
+    }
+  .box-last {
+    background-color: #f4b642;
+  }
+
+
+/* 個別のボックス */
+.box000 {
+  background-image: url(../images/2.png);
+}
+.box001 {
+  background-image: url(../images/1.png);
+}
+.box002 {
+  background-image: url(../images/3.png);
+}
+.box003 {
+  background-image: url(../images/4.png);
+}
+.box004 {
+  background-image: url(../images/5.png);
+}
+.box005 {
+  background-image: url(../images/6.png);
+}
+.box006 {
+  background-image: url(../images/7.png);
+}
+.box007 {
+  background-image: url(../images/8.png);
+}
+.box008 {
+  background-image: url(../images/9.png);
+}
+.box009 {
+  background-image: url(../images/10.png);
+    }
+.box010 {
+  background-image: url(../images/11.png);
+}
+.box011 {
+  background-image: url(../images/12.png);
+}
+.box012 {
+  background-image: url(../images/13.png);
+}
+.box013 {
+  background-image: url(../images/14.png);
+}
+.box014 {
+  background-image: url(../images/15.png);
+}
+.box015 {
+  background-image: url(../images/16.png);
+}
+.box016 {
+  background-image: url(../images/17.png);
+}
+.box017 {
+  background-image: url(../images/18.png);
+}
+.box018 {
+  background-image: url(../images/19.png);
+}
+.box019 {
+  background-image: url(../images/20.png);
+}
+.box020 {
+  background-image: url(../images/21.png);
+}
+.box021 {
+  background-image: url(../images/22.png);
+}
+.box023 {
+  background-image: url(../images/23.png);
+}
+.box024 {
+  background-image: url(../images/24.png);
+}
+.box025 {
+  background-image: url(../images/25.png);
+}
+.box026 {
+  background-image: url(../images/26.png);
+}
+.box027 {
+  background-image: url(../images/27.png);
+}
+.box028 {
+  background-image: url(../images/28.png);
+}
+.box029 {
+  background-image: url(../images/29.png);
+}
+.box031 {
+  background-image: url(../images/39.png);
+}
+.box032 {
+  background-image: url(../images/30.png);
+}
+.box033 {
+  background-image: url(../images/31.png);
+}
+.box034 {
+  background-image: url(../images/32.png);
+}
+.box035 {
+  background-image: url(../images/33.png);
+}
+.box036 {
+  background-image: url(../images/34.png);
+}
+.box037 {
+  background-image: url(../images/35.png);
+}
+.box038 {
+  background-image: url(../images/36.png);
+}
+.box039 {
+  background-image: url(../images/37.png);
+}
+.box040 {
+  background-image: url(../images/38.png);
+}
+.box042 {
+  background-image: url(../images/40.png);
+}
+.box043 {
+  background-image: url(../images/41.png);
+}
+.box044 {
+  background-image: url(../images/42.png);
+}
+.box045 {
+  background-image: url(../images/43.png);
+}
+.box046 {
+  background-image: url(../images/44.png);
+}
+.box047 {
+  background-image: url(../images/45.png);
+}
+.box048 {
+  background-image: url(../images/46.png);
+}
+.box049 {
+  background-image: url(../images/47.png);
+}
+.box050 {
+  background-image: url(../images/48.png);
+}
+.box051 {
+  background-image: url(../images/49.png);
+}
+.box052 {
+  background-image: url(../images/50.png);
+}
+
+.box053 {
+  background-image: url(../images/51.png);
+}
+.box054 {
+  background-image: url(../images/52.png);
+}
+.box055 {
+  background-image: url(../images/53.png);
+}
+.box056 {
+  background-image: url(../images/54.png);
+}
+.box057 {
+  background-image: url(../images/55.png);
+}
+.box058 {
+  background-image: url(../images/56.png);
+}
+.box059 {
+  background-image: url(../images/57.png);
+}
+.box060 {
+  background-image: url(../images/58.png);
+}
+.box061 {
+  background-image: url(../images/59.png);
+}
+.box062 {
+  background-image: url(../images/60.png);
+}
+.box063 {
+  background-image: url(../images/61.png);
+}
+.box064 {
+  background-image: url(../images/62.png);
+}
+.box065 {
+  background-image: url(../images/63.png);
+}
+.box066 {
+  background-image: url(../images/64.png);
+}
+.box067 {
+  background-image: url(../images/65.png);
+}
+.box068 {
+  background-image: url(../images/66.png);
+}
+.box069 {
+  background-image: url(../images/67.png);
+}
+.box070 {
+  background-image: url(../images/68.png);
+}
+.box071 {
+  background-image: url(../images/69.png);
+}
+.box072 {
+  background-image: url(../images/70.png);
+}
+.box073 {
+  background-image: url(../images/71.png);
+}
+.box074 {
+  background-image: url(../images/72.png);
+}
+.box075 {
+  background-image: url(../images/73.png);
+}
+.box076 {
+  background-image: url(../images/74.png);
+}
+.box077 {
+  background-image: url(../images/75.png);
+}
+.box078 {
+  background-image: url(../images/76.png);
+}
+.box079 {
+  background-image: url(../images/77.png);
+}
+.box080 {
+  background-image: url(../images/78.png);
+}
+.box081 {
+  background-image: url(../images/79.png);
+}
+.box082 {
+  background-image: url(../images/80.png);
+}
+.box083 {
+  background-image: url(../images/81.png);
+}
+.box084 {
+  background-image: url(../images/82.png);
+}
+.box085 {
+  background-image: url(../images/83.png);
+}
+.box086 {
+  background-image: url(../images/84.png);
+}
+.box087 {
+  background-image: url(../images/85.png);
+}
+.box088 {
+  background-image: url(../images/86.png);
+}
+.box089 {
+  background-image: url(../images/87.png);
+}
+.box090 {
+  background-image: url(../images/88.png);
+}
+.box091 {
+  background-image: url(../images/89.png);
+}
+.box092 {
+  background-image: url(../images/90.png);
+}
+.box093 {
+  background-image: url(../images/91.png);
+}
+.box094 {
+  background-image: url(../images/92.png);
+}
+.box095 {
+  background-image: url(../images/93.png);
+}
+.box096 {
+  background-image: url(../images/94.png);
+}
+.box097 {
+  background-image: url(../images/95.png);
+}
+.box098 {
+  background-image: url(../images/96.png);
+}
+.box099 {
+  background-image: url(../images/97.png);
+}
+.box100 {
+  background-image: url(../images/98.png);
+}
+.box101 {
+  background-image: url(../images/99.png);
+}
+.box102 {
+  background-image: url(../images/100.png);
+}
+.box103 {
+  background-image: url(../images/101.png);
+}
+.box104 {
+  background-image: url(../images/102.png);
+}
+.box105 {
+  background-image: url(../images/103.png);
+}
+.box106 {
+  background-image: url(../images/104.png);
+}
+.box107 {
+  background-image: url(../images/105.png);
+}
+.box108 {
+  background-image: url(../images/106.png);
+}
+.box109 {
+  background-image: url(../images/107.png);
+}
+.box110 {
+  background-image: url(../images/108.png);
+}
+.box111 {
+  background-image: url(../images/109.png);
+}
+.box112 {
+  background-image: url(../images/110.png);
+}
+.box113 {
+  background-image: url(../images/111.png);
+}
+.box114 {
+  background-image: url(../images/112.png);
+}
+.box115 {
+  background-image: url(../images/113.png);
+}
+
+
+
+
+.box200 {
+  height: 100vh;
+  background-image: url(../images/hukidasi.png);
+  background-size: cover;
+}
+.box0 {
+  background-image: url(../images/0.png);
+}
